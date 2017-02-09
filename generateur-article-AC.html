@@ -1,0 +1,384 @@
+﻿<DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Création d'article d'action culturelle</title>
+    <style type="text/css">
+  @import url(css/article.css);
+  @import url(css/interface.css);
+</style>
+  </head>
+<body>
+
+<nav>
+    <div id="titre-menu"><a href="#titre-menu" >Générateur d'article d'action culturelle</a></div>
+    <div id="menu-liens">
+    <a href="#generateur-cdc" class="menu-liens"><div  id="generateur-cdc" >Générateur d'article Coups de coeur</div></a>
+    <a href="#aide" class="menu-liens"><div id="aide" >Aide</div></a>
+    </div>
+</nav>
+
+<div id="wrapper">
+  <div id="gauche">
+    <!--intro-->
+      <div id="text-intro">
+        <p>Texte d'intro</p>
+      </div>
+    <hr id="system-readmore" />
+
+    <style type="text/css">
+
+    /*se débarasser du titre moche*/
+    .pagect h1 {
+        display : none;
+    }
+
+    /*se débarasser du deuxième titre moche*/
+    h2.span9{
+    display : none;
+    }
+
+    /*style de l'article*/
+    #conteneur{
+    /*width @image*/
+    width: 500px;
+    margin : auto;
+    margin-top : -25px;
+    }
+
+    #titre h4{
+    font-size : 30px;
+   text-transform: uppercase;
+   text-align: center;
+    }
+      
+    #titre h3{
+    font-size: 20px;
+    text-align: center;
+    margin-top: -5px;
+    margin-bottom: -10px;
+    line-height: 20px;
+    }
+
+    #image{
+      margin-top : 20px;
+      margin-bottom : 20px;
+    }
+
+    #texte{
+        margin-bottom : 20px;
+    }
+
+
+    #informations {
+          border : 2px solid black;
+          padding : 5px;
+          border-radius: 20px 20px 20px 20px;
+          width : 400px;
+          margin : auto;
+          margin-bottom : 20px;
+    }
+
+  
+    .sprite {
+      content: "";
+      height: 40px;
+    width: 40px;
+     background-color : #829D18;
+     background-size : 40px;
+      border-radius : 10px;
+    }
+
+    #public .sprite{
+     background-position: bottom;
+    }
+
+    #reservation .sprite{
+        background-position: bottom;
+    }
+
+    #dates div{
+      display : inline-block
+    }
+
+    #dates p{
+      font-size : 16px;
+      text-align: center;
+      padding-left: 0px;
+    }
+
+    #BU strong{
+      color: #ff6600
+    }
+
+    #FM strong{
+      color: #829C21
+    }
+
+    #JP strong{
+      color: #6F2882
+    }
+
+    #FO strong{
+      color: #AD002E
+    }
+
+
+
+    #informations p{
+      font-size : 17px;
+      padding-left : 5px;
+      margin : 0px;
+    }
+
+    #horaires p{
+      font-size : 14px;
+    }
+
+    #reservation p{
+      font-size : 14px;
+    }
+
+    .centre-horizontal{
+      text-align:center;
+      padding-bottom: 15px;
+    }
+
+    .centre-vertical{
+      display:inline-block;
+      vertical-align:middle;
+    }
+
+    #dates{
+      clear : both;
+    }
+
+    #dates p{
+    font-size : 18px;
+    margin-left: 0px;
+    padding-bottom: 3px;
+    }
+
+    #informations h4 {font-size: 26px; 
+      letter-spacing: 1px;
+      color: #809b27;
+      text-align : center;
+      margin-top : 5px;
+      margin-bottom : 15px;
+
+      }
+     
+
+    #img {
+      display: block;
+      margin-right: auto; margin-left: auto;
+    }
+
+
+    a {
+      text-decoration: none;
+      color: #809B27;
+      cursor : pointer;
+    }
+
+    li {padding-bottom: 5px;}
+
+    /*media queries */
+
+    @media (max-width: 1200px)
+    {
+      #conteneur{
+    /*width @image*/
+    width: auto ;
+    margin : auto;
+    }
+
+    #informations{
+    width : 85% ;
+    }
+
+    .centre-vertical{
+      display:block ;
+      vertical-align: none ;
+      margin : auto ;
+    }
+
+    #dates div{
+      margin-bottom : 15px ;
+      }
+    }
+
+    </style>
+        
+    <div id="conteneur">
+      <div id="titre">
+        <h4>Le titre</h4>
+    	<h3></h3>
+      </div>
+      <!--Image illustration-->
+      <div id="image" text-align="center">
+        <img style="display: block; margin-left: auto; margin-right: auto;" src="http://mediatheque.clamart.fr/images/stories/logos/logo_RdMdC-VSGP_thumbnail.jpg" alt="logo Réseau des médiathèques de Clamart" id="img" class="img" />
+      </div>
+      <div id="texte">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae velit diam. Phasellus quis sapien non libero egestas facilisis. Nulla sed volutpat quam. Phasellus aliquet feugiat leo, vitae mollis erat fringilla ut. Nulla et cursus leo. Etiam imperdiet imperdiet sem, sed ornare ex tempus eget. Nunc pulvinar est velit, nec commodo eros ornare nec. Nam a nisi eu felis sodales volutpat in vel erat. Proin tempus molestie feugiat. </p>
+      </div>
+      <div id="informations">
+        <h4>Informations pratiques</h4>
+        <div id="public" class="centre-horizontal">
+          <a href="http://mediatheque.clamart.fr/component/articleplus/recherche/232?articleplus[1]=jeunes" id="lien-cat-public">
+            <div class="sprite centre-vertical">&nbsp;</div>
+              <div class="centre-vertical">
+                <p>A partir de 3 ans</p>
+              </div>
+          </a>
+        </div>
+        <div id="horaires" class="centre-horizontal">
+          <div class="sprite centre-vertical">&nbsp;</div>
+          <div class="centre-vertical">
+              <p id="horaires-texte">Le mercredi pendant les vacances scolaires à 15h30<br />Durée 30 à 40 min</p>
+          </div>
+        </div>
+        <div id="reservation" class="centre-horizontal">
+          <div class="sprite centre-vertical">&nbsp;</div>
+          <div class="centre-vertical">
+            <p><span id="resa-span">Réservation conseillée<br /></span> Renseignements auprès des bibliothécaires<br /> <strong><a href="tel:01 46 01 71 30">01 46 01 71 30</a></strong></p>
+          </div>
+        </div>
+        <div id="dates" class="centre-horizontal">
+          <div id="BU"><a href=\"/pratique/venir#BU\" title=\"Venir à la médiathèque La Buanderie\"><img src="http://mediatheque.clamart.fr/images/stories/logos/picto_buanderie-mini.png" alt="Logo Buanderie" width="190" /> </a>
+            <strong id="texte-horaires1">
+            <p>Mercredi 20 avril</p>
+            <p>Samedi 11 juin</p>
+            </strong>
+          </div>
+          <div id="FM"><a href=\"/pratique/venir#FM\" title=\"Venir à la médiathèque François Mitterrand\"><img src="http://mediatheque.clamart.fr/images/stories/logos/picto_mitterrand-mini.png" alt="Logo mediatheque mitterrand" width="190" /> </a>
+            <strong id="texte-horaires2">
+            <p>Samedi 02 février</p>
+            <p>Jeudi 07 aôût</p>
+            </strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="droite">
+
+        <div id="controles">
+          <div class="titres-generat">Introduction</div>
+          <div style="margin-bottom : 15px;">
+          <label for="text-intro" style="vertical-align:top">Texte de l'introduction</label>
+          <textarea id="intro-generat" cols="40" rows="5"></textarea>
+          <button id="intro-btn">OK</button>
+          </div>
+
+          <hr />
+
+          <div class="titres-generat">Illustration</div>
+          <div style="margin-bottom : 10px;">
+          <label for="dossier-image">Renseigne le nom exact du répertoire dans lequel se trouve l'image.<br/>
+          <span style="font-weight : normal; color : #838383; font-size : 12px;" >Le repertoire est obligatoirement lui même dans le repertoire "action culturelle"</span></label>
+          <input type="text" id="dossier-image">
+          <button id="dossier-image-btn">OK</button>
+          </div>
+
+          <div id="upload-image">
+          <div style="margin-bottom : 10px;">
+          <label for="nom-image">Renseigne le nom exact de l'image, avec son extension <br/>
+          <span style="font-weight : normal; color : #838383; font-size : 12px;" >(exemple : "paniersahistoires.jpg")</span></label>
+          <input type="text" id="nom-image">
+          <button id="nom-image-btn">OK</button>
+          </div>
+
+          <div style="margin-bottom : 10px;">
+          <label for="alt-image">Donne une description brève de l'image <br/>
+          <span style="font-weight : normal; color : #838383; font-size : 12px;" >(exemple : "chat roux dans un rayonnage de romans policiers.")</span></label>
+          <input type="text" id="alt-image">
+          <button id="alt-image-btn">OK</button>
+          </div>
+          </div>
+
+          <hr />
+
+          <div class="titres-generat">Corps de l'article</div>
+          <div style="margin-bottom : 15px;">
+          <label for="titre-generat">Titre de l'article</label>
+          <input type="text" id="titre-generat">
+          <button id="titre-btn">OK</button>
+          </div>
+
+          <div style="margin-bottom : 15px;">
+          <label for="type">Type d'animation</label>
+          <input type="text" id="type">
+          <button id="type-btn">OK</button>
+          </div>
+
+          <div style="margin-bottom : 15px;">
+          <label for="texte-generat" style="vertical-align:top">Texte de l'article</label>
+          <textarea id="texte-generat" cols="40" rows="5"></textarea>
+          <button id="texte-btn">OK</button>
+          </div>
+
+          <hr />
+
+          <div class="titres-generat">Informations pratiques</div>
+          <div style="margin-bottom : 15px;">
+          <label for="public-generat">Quel public?</label>
+          <select id="public-generat">
+            <option value="De 0 à 3 ans">De 0 à 3 ans</option>
+            <option value="Dès 3 ans">Dès 3 ans</option>
+            <option value="Dès 5 ans">Dès 5 ans</option>
+            <option value="De 5 à 7 ans">De 5 à 7 ans</option>
+            <option value="Dès 6 ans">Dès 6 ans</option>
+            <option value="Dès 7 ans">Dès 7 ans</option>
+            <option value="Dès 8 ans">Dès 8 ans</option>
+            <option value="De 8 à 12 ans">De 8 à 12 ans</option>
+            <option value="De 8 à 15 ans">De 8 à 15 ans</option>
+            <option value="Tout public">Tout public</option>
+            <option value="Adulte">Adulte</option>
+          </select>
+          </div>
+
+          <div style="margin-bottom : 15px;">
+          <label for="horaires-generat">Horaires</label>
+          <textarea id="horaires-generat" cols="40" rows="2"></textarea>
+          <button id="horaires-btn">OK</button>
+          </div>
+
+          <div style="margin-bottom : 15px;">
+          <form id="resa-generat">
+          <label for="radio">Réservation conseillée?</label>
+          <input type="radio" name="resa" value="oui" checked> oui
+          <input type="radio" name="resa" value="non"> non
+          </form>
+          </div>
+        
+          <div style="margin-bottom : 15px;" id="mediat-logo">
+          <label for="mediat-generat">Dans quelle(s) médiathèque(s)?</label>
+          <select id="mediat-generat">
+            <option value="FM" style="background-color : #829C17">François Mitterrand</option>
+            <option value="BU" style="background-color : #ED7E12">La Buanderie</option>
+            <option value="JP" style="background-color : #742982">Jardin Parisien</option>
+            <option value="FO" style="background-color : #AD002E">La Fourche</option>
+            <option value="FM+BU" style="background-image:linear-gradient(60deg, #829C17, #ED7E12);">François Mitterrand et La Buanderie</option>
+          </select>
+          </div>
+
+          <hr />
+    <!--bouton generateur de code -->
+      <div id="copier"> <button id="afficher-code"><strong>Générer le code</strong></button>          
+          <button id="raz" type="button">Réinitialiser le formulaire</button>
+
+        </div>
+    </div>
+
+      <textarea id="lecode"></textarea>
+      <button id="presspap" type="button">Copier dans le presse-papier</button>
+    </div>
+
+  </div>
+</div>
+  <script src="jquery-2.2.2.min.js"></script>
+  <script src="jquery-generateur-article-AC.js"></script>
+</body>
+</html>
