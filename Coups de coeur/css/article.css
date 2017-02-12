@@ -1,0 +1,73 @@
+/*style de l'apecu de l'article - non injecté dans le code généré mais présent dans feuille css du template "clamart-custom.css"*/
+        
+#gauche {
+width: 45%;
+background: none repeat scroll 0 0 #F5F5F5;
+border-radius: 5px 5px 5px 5px;
+padding: 0 5px 5px 5px;
+display : inline-block;
+margin-right : 10px;
+text-align : left;
+}
+
+/*style images*/
+.img{
+
+/* radius */  
+border-radius: 20px 20px 20px 20px;
+-moz-border-radius: 20px 20px 20px 20px;
+-webkit-border-radius: 20px 20px 20px 20px;
+border: 0px solid #000000;
+
+/* ombrage */  
+-webkit-box-shadow:  1px 1px 10px 0px rgba(0,0,0,0.4);
+-moz-box-shadow:  1px 1px 10px 0px rgba(0,0,0,0.4);
+box-shadow:  1px 1px 10px 0px rgba(0,0,0,0.4);
+
+margin-bottom : 5px;
+}
+
+.img:hover{
+
+/* radius */  
+border-radius: 20px 20px 20px 20px;
+-moz-border-radius: 20px 20px 20px 20px;
+-webkit-border-radius: 20px 20px 20px 20px;
+border: 0px solid #000000;
+
+/* ombrage */  
+-webkit-box-shadow: 1px 1px 10px 0px rgba(129,143,54,0.9);
+-moz-box-shadow: 1px 1px 10px 0px rgba(129,143,54,0.9);
+box-shadow:  1px 1px 10px 0px rgba(129,143,54, 0.9);
+    -webkit-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -kthtml-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+
+}
+
+a{
+color: #818f36;
+text-decoration: none;
+}
+
+h4{
+margin: 10px 0;
+}
+
+#text-intro-art{padding: 10px;
+background-color: rgba(0, 0, 0, 0.25);
+position: absolute;
+top: 30.5%;
+color: #FFF;
+height: 78.5px;
+width: 868px;
+box-sizing: border-box;
+margin-left: -5px;
+}
+
+#bann-art{
+    margin-left: -5px;
+}
