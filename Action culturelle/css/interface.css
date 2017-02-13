@@ -21,28 +21,18 @@ background-color : #838383;
 font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 14px;
 color : rgba(0,0,0,.85);
- text-align:center;
 }
 
-#wrapper-main{
-    position : relative;
-     max-width:1980px;
-    min-height:100%;
-}
 /* header */
 
-header{
+nav{
     text-align: center;
     background-color: #F1F1F1;
     height : 80px;
     border-radius: 0px 0px 15px 15px;
 }
 
-li{
-  list-style: none;
-}
-
-header a{
+nav a{
     color: #C02E44;
 }
 
@@ -70,57 +60,6 @@ nav div{
     display : inline-block;
 }
 
-.navigation {
-  list-style: none;
-    margin: 0;
-    padding: 0;
-    float : right;
-    margin-top: -10px;
-    box-sizing: border-box;
-    width: 180px;
-}
-
-
-.navigation .subMenu {
-    font-size: .8em;
-    margin: 0;
-    padding: 0;
-    border: 1px solid rgba(0,0,0,.30);;
-    border-radius: 0px 0px 10px 10px;
-    position: absolute;
-    background-color: #F1F1F1;
-    box-sizing: border-box;
-    width : 160px;
-}
-
-.subMenu > li:nth-child(2) > a:nth-child(1):hover{
-    border-radius : 0px 0px 10px 10px;
-    background-color: #C02E44;
-    color: #F1F1F1;
-    transition: color 1s, background-color 1s;
-}
-
-
-.navigation ul.subMenu a {
-  padding: 5px;
-}
-
-.subMenu li{
-    text-align : left;
-}
-
-.navigation a, .navigation span {
-  display: block;
-  text-decoration: none;
-}
-
-.navigation a:hover, .navigation span:hover {
-background-color: #C02E44;
-color : #F1F1F1;
-transition: color 1s, background-color 1s;
-}
-
-
 #titre-menu{
     display : block;
     text-transform: uppercase;
@@ -130,10 +69,9 @@ transition: color 1s, background-color 1s;
 }
 
 /*corps*/
-#wrapper-content{
+#wrapper{
 text-align: center;
 margin-top: 20px;
-margin-bottom : 50px;
 }
 
 /*generateur*/
@@ -142,7 +80,7 @@ margin-bottom : 50px;
 background-color: #F1F1F1;
 padding : 10px;
 display : inline-block;
-width: 41%;
+width: 870px;
 vertical-align: top;
 text-align: left;
 border-radius : 5px;
@@ -152,7 +90,6 @@ border-radius : 5px;
     font-size: 20px;
     font-weight: bold;
     color: #838383;
-    margin-bottom: 5px;
 }
 
 hr{
@@ -216,36 +153,21 @@ button:active {
     box-shadow: 0 2px 2px #666;
 }
 
-#upload-banniere{
-    display : none;
-}
-
-#div-alt{
-    display : none;
-}
-
-#bann{
-    margin-left : -4px;
-}
-
-#creer{
-    font-size : 20px;
-}
-
 #copier{
 margin-top : 15px;
 margin-bottom : 20px;
 }
 
 #raz{
+    margin: auto;
     display: block;
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
 #afficher-code{
-    font-size: 20px;
-    padding: 10px;
+    font-size: 25px;
+    padding: 15px;
 }
 
 #lecode, #presspap{

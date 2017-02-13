@@ -4,120 +4,132 @@
     <meta charset="UTF-8">
     <title>Création d'article Coups de cœur</title>
     <style type="text/css">
-  @import url(css/article.css);
-  @import url(css/interface.css);
-</style>
+    @import url(css/article.css);
+    @import url(css/interface.css);
+    </style>
   </head>
 <body>
 
-<nav>
+<div id="wrapper-main">
+  <header>
     <div id="titre-menu"><a href="#titre-menu" >Générateur d'article Coups de cœur</a></div>
-    <div id="menu-liens">
-    <a href="#generateur-cdc" class="menu-liens"><div  id="generateur-cdc" >Générateur d'article d'action culturelle</div></a>
-    <a href="#aide" class="menu-liens"><div id="aide" >Aide</div></a>
+    <nav>
+        <div id="menu-liens">
+          <!-- Generateur Action culturelle -->
+          <a href="#generateur-cdc" class="menu-liens"><div  id="generateur-cdc" >Générateur d'article d'action culturelle</div></a>
+          <!--menu accordeon aide -->
+          <ul class="navigation">
+            <li class="toggleSubMenu" id="toggleAide"><span>Aide</span>
+            <ul class="subMenu">
+              <li><a href="#" title="Aide - Générer le code">Vidéo aide - Générer le code</a></li>
+              <li><a href="#" title="Aide - Ajouter le code sur Joomla">Vidéo aide - Ajouter le code sur Joomla</a></li>
+            </ul>
+          </ul>
+        </div>
+    </nav>
+  </header>
+
+  <div id="wrapper-content">
+    <div id="gauche">
+
+        <!--banniere-->
+        <img id="bann-art" style="width: 868px;height: 250px;"/>
+        <!--intro-->
+        <div id="text-intro-art">
+          <p>Texte d'intro</p>
+        </div>
+        <hr id="system-readmore" />
+
+      <!-- style -->
+      <style scoped="scoped" type="text/css"><!--
+      .img{
+      /* positionnement */	
+      float: left;
+      margin-right: 15px; 
+      margin-left: 5px; 
+      width : 200px; 
+      }
+
+      h4{
+      font-size: 16px; 
+      }
+
+      @media (max-width: 750px) {
+
+      #img{
+      float: none;
+      display: block;
+      margin: auto; 
+      margin-bottom: 10px;
+      }
+
+      h4{
+      text-align: center;
+      }
+      }
+      </style>
+      <!-- emplacement code html pour article --> 
+      <div id="start-gauche"></div>
     </div>
-</nav>
 
-<div id="wrapper">
-  <div id="gauche">
+    <div id="droite">
 
-      <!--banniere-->
-      <img id="bann-art" style="width: 868px;height: 250px;"/>
-      <!--intro-->
-      <div id="text-intro-art">
-        <p>Texte d'intro</p>
-      </div>
-      <hr id="system-readmore" />
+          <div id="controles">
 
-    <!-- style -->
-    <style scoped="scoped" type="text/css"><!--
-    .img{
-    /* positionnement */	
-    float: left;
-    margin-right: 15px; 
-    margin-left: 5px; 
-    width : 200px; 
-    }
+            <div id="repertoire">
+              <h2 class="titres-generat">Repertoire</h2>
+              <label for="dossier-image">Renseigne le nom exact du répertoire dans lequel sont stockées les images.<br/>
+              <span style="font-weight : normal; color : #838383; font-size : 12px;" >Le repertoire est obligatoirement lui même dans le repertoire "coups_de_cœur "</span></label>
+              <input type="text" id="dossier-image">
+              <button id="dossier-image-btn">OK</button>
+            </div>
+            
+            <hr/>
 
-    h4{
-    font-size: 16px; 
-    }
+            <div id="carrousel">
+              <h2 class="titres-generat">Affichage dans le carrousel</h2>
+              <div id="upload-banniere">
+                <label for="nom-banniere">Renseigne le nom exact de l'image, avec son extension <br/>
+                <span style="font-weight : normal; color : #838383; font-size : 12px;" >(exemple : "banniere-janvier.jpg" - Attention : L'image doit faire 868px de large pour 250px de haut, sinon elle sera déformée)</span></label>
+                <input type="text" id="nom-banniere">
+                <button id="nom-banniere-btn">OK</button>
+              </div>
 
-    @media (max-width: 750px) {
+              <div id="text-intro">
+                <label for="text-intro" style="vertical-align:top">Texte résumé <br/>
+                <span style="font-weight : normal; color : #838383; font-size : 12px;" >(Attention : Le texte est limité à 92 caractères maximum - En ce moment : </span><span style="font-weight : normal; color : #838383; font-size : 12px;" id="count"></span>
+  </label>
+                <input id="intro-generat" type="text" maxlength="92" size="76">
+                <button id="intro-btn">OK</button>
 
-    #img{
-    float: none;
-    display: block;
-    margin: auto; 
-    margin-bottom: 10px;
-    }
-
-    h4{
-    text-align: center;
-    }
-    }
-    </style>
-    <!-- emplacement code html pour article --> 
-    <div id="start-gauche"></div>
-  </div>
-
-  <div id="droite">
-
-        <div id="controles">
-
-          <div id="repertoire">
-            <h2 class="titres-generat">Repertoire</h2>
-            <label for="dossier-image">Renseigne le nom exact du répertoire dans lequel sont stockées les images.<br/>
-            <span style="font-weight : normal; color : #838383; font-size : 12px;" >Le repertoire est obligatoirement lui même dans le repertoire "coups_de_cœur "</span></label>
-            <input type="text" id="dossier-image">
-            <button id="dossier-image-btn">OK</button>
+            </div>
           </div>
-          
-          <hr/>
 
-          <div id="carrousel">
-            <h2 class="titres-generat">Affichage dans le carrousel</h2>
-            <div id="upload-banniere">
-              <label for="nom-banniere">Renseigne le nom exact de l'image, avec son extension <br/>
-              <span style="font-weight : normal; color : #838383; font-size : 12px;" >(exemple : "banniere-janvier.jpg" - Attention : L'image doit faire 868px de large pour 250px de haut, sinon elle sera déformée)</span></label>
-              <input type="text" id="nom-banniere">
-              <button id="nom-banniere-btn">OK</button>
+            <hr />
+            <div id="creer-cdc">
+              <h2 class="titres-generat">Créer un nouveau coup de cœur</h2>
+              <button id="creer">Créer</button>
+              <hr/>
             </div>
 
-            <div id="text-intro">
-              <label for="text-intro" style="vertical-align:top">Texte résumé <br/>
-              <span style="font-weight : normal; color : #838383; font-size : 12px;" >(Attention : Le texte est limité à 92 caractères maximum - En ce moment : </span><span style="font-weight : normal; color : #838383; font-size : 12px;" id="count"></span>
-</label>
-              <input id="intro-generat" type="text" maxlength="92" size="76">
-              <button id="intro-btn">OK</button>
+            </hr>
+
+            <div id="start-droite"></div>
+
+            <hr />
+                <!--bouton generateur de code -->
+            <div id="copier"> <button id="afficher-code"><strong>Générer le code</strong></button>
+            <button id="raz" type="button">Réinitialiser le formulaire</button>
 
           </div>
-        </div>
+      </div>
 
-          <hr />
-          <div id="creer-cdc">
-            <h2 class="titres-generat">Créer un nouveau coup de cœur</h2>
-            <button id="creer">Créer</button>
-            <hr/>
-          </div>
+        <!-- afficher le code -->
+        <textarea id="lecode"></textarea>
+        <button id="presspap" type="button">Copier dans le presse-papier</button>
+      </div>
 
-          </hr>
-
-          <div id="start-droite"></div>
-
-          <hr />
-              <!--bouton generateur de code -->
-          <div id="copier"> <button id="afficher-code"><strong>Générer le code</strong></button>
-          <button id="raz" type="button">Réinitialiser le formulaire</button>
-
-        </div>
     </div>
-
-      <!-- afficher le code -->
-      <textarea id="lecode"></textarea>
-      <button id="presspap" type="button">Copier dans le presse-papier</button>
-    </div>
-
   </div>
 </div>
   <script src="jquery-2.2.2.min.js"></script>
