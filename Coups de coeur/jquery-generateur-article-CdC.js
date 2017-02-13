@@ -1,11 +1,46 @@
 $(function(){
 
+//----------------------------- Menu ------------------------------------//
+
+// cache les sous-menus :
+$(".navigation ul.subMenu").hide();  
+
+// remplace l'élément span par un lien :
+$(".navigation li.toggleSubMenu span").each( function () {
+    $(this).replaceWith('<a href="" class="menu-liens" title=" '+ $(this).text() +' ">' + $(this).text() + '<\/a>') ;
+} ) ;   
+
+// Effet accordéon
+$(".navigation li.toggleSubMenu > a").click( function () {
+
+    // Si le sous-menu était déjà ouvert, on le referme :
+    if ($(this).next("ul.subMenu:visible").length != 0) {
+    //retour style enroulé
+        $('#toggleAide > a:nth-child(1)').css('border-radius', '15px 15px 15px 15px');
+
+        $(this).next("ul.subMenu").slideUp("normal");
+    }
+    // Si le sous-menu est caché, on ferme les autres et on l'affiche :
+    else {
+    //style au déroulé
+    $('#toggleAide > a:nth-child(1)').css('border-radius', '15px 15px 0px 0px');
+
+        $(".navigation ul.subMenu").slideUp("normal");
+        $(this).next("ul.subMenu").slideDown("normal");
+    }
+    // On empêche le navigateur de suivre le lien :
+    return false;
+});       
+
+//----------------------------- Codes introduction ------------------------------------//
+
+//initialisation de l'incrementation 
 var increment = 0;
 
 //intro
 $('#intro-btn').click(function() {
   var texteintro = $('#intro-generat').val().replace( /\n/g, '<br/>' );
-  $('#text-intro p').replaceWith('<p>' + texteintro + '</p>');
+  $('#text-intro-art p').replaceWith('<p>' + texteintro + '</p>');
 });
 
 //traitement banniere
