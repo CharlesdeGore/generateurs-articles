@@ -188,6 +188,9 @@ $('#afficher-code').click(function() {
   $('#copiedtext').hide().fadeIn(500);
   });
 
+  //(positionnement footer reactualisté après generation code)
+  $('footer').css('position', 'static');
+
 });
 
 });
