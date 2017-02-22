@@ -150,6 +150,8 @@ $('#signature-btn'+ increment +'').click(function() {
   $('#signature'+ increment +'').replaceWith('<p id="signature'+increment+'" style="font-size: 0.9em; clear: both;"><em>'+ signature +'</em></p>');
 });
 
+//(positionnement footer reactualisté après generation CdC)
+$('footer').css('position', 'static');
 
 });
 //----------------------------- Fin codes création du coup de coeur------------------------------------//
@@ -185,6 +187,9 @@ $('#afficher-code').click(function() {
   $('#lecode').before('<div id="copiedtext">C\'est copié !</span>');
   $('#copiedtext').hide().fadeIn(500);
   });
+
+  //(positionnement footer reactualisté après generation code)
+  $('footer').css('position', 'static');
 
 });
 
