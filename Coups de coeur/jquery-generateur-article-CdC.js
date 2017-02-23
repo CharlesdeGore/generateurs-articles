@@ -76,7 +76,7 @@ function count(src,dest){
 $('#creer').click(function() {
    $('#cdc-generat'+ increment +'').remove();   
     increment = increment+1;
- $('#start-droite').after('<div id="cdc-generat' + increment +'"><h2 class="titres-generat">Coup de cœur n° '+ increment +'</h2><label for="nom-image">Renseigne le nom exact de l\'image, avec son extension <br/><span style="font-weight : normal; color : #838383; font-size : 12px;" >(exemple : "paniersahistoires.jpg")</span></label><input type="text" id="nom-image'+ increment +'"><button id="nom-image-btn'+ increment +'">OK</button><div id="div-alt" style="margin-bottom : 10px;"><label for="alt-image">Donne une description brève de l\'image <br/><span style="font-weight : normal; color : #838383; font-size : 12px;" >(exemple : "chat roux dans un rayonnage de romans policiers.")</span></label><input type="text" id="alt-image'+ increment +'"><button id="alt-image-btn'+ increment +'">OK</button></div><div style="margin-bottom : 10px;"><label for="titre-document">Titre du document </label><input type="text" id="titre-document-generat'+ increment +'"><button id="titre-document-btn'+ increment +'">OK</button></div><div style="margin-bottom : 10px;"><label for="auteur">Auteur(e)(s)</span></label><input type="text" id="auteur-generat'+ increment +'"><button id="auteur-btn'+ increment +'">OK</button></div><div style="margin-bottom : 10px;"><label>Éditeur(s)</span></label><input type="text" id="editeur-generat'+ increment +'"><button id="editeur-btn'+ increment +'">OK</button></div><div style="margin-bottom : 10px;"><label>Année d\'édition</span></label><input type="text" id="annee-generat'+ increment +'"><button id="annee-btn'+ increment +'">OK</button></div><label for="texte-generat" style="vertical-align:top">Texte du coup de cœur</label><textarea id="texte-generat'+ increment +'" cols="40" rows="5"></textarea><button id="texte-btn'+ increment +'">OK</button><div style="margin-bottom : 10px;"><label>Adresse (URL) du document sur l\'OPAC</span></label><input type="text" id="url-generat'+ increment +'"><button id="url-btn'+ increment +'">OK</button></div></div><div style="margin-bottom : 10px;"><label>Signature</span></label><input type="text" id="signature-generat'+ increment +'"><button id="signature-btn'+ increment +'">OK</button></div>');
+ $('#start-droite').after('<div id="cdc-generat' + increment +'"><h2 class="titres-generat">Coup de cœur n° '+ increment +'</h2><label for="nom-image">Renseigne le nom exact de l\'image, avec son extension <br/><span style="font-weight : normal; color : #838383; font-size : 12px;" >(exemple : "contes-de-la-folie-ordinaire.jpg"). L\'image sera affichée avec une largeur de 200 pixels.</span></label><input type="text" id="nom-image'+ increment +'"><button id="nom-image-btn'+ increment +'">OK</button><div id="div-alt" style="margin-bottom : 10px;"><label for="alt-image">Donne une description brève de l\'image <br/><span style="font-weight : normal; color : #838383; font-size : 12px;" >(exemple : "chat roux dans un rayonnage de romans policiers.")</span></label><input type="text" id="alt-image'+ increment +'"><button id="alt-image-btn'+ increment +'">OK</button></div><div style="margin-bottom : 10px;"><label for="titre-document">Titre du document </label><input type="text" id="titre-document-generat'+ increment +'"><button id="titre-document-btn'+ increment +'">OK</button></div><div style="margin-bottom : 10px;"><label for="auteur">Auteur(e)(s)</span></label><input type="text" id="auteur-generat'+ increment +'"><button id="auteur-btn'+ increment +'">OK</button></div><div style="margin-bottom : 10px;"><label>Éditeur(s)</span></label><input type="text" id="editeur-generat'+ increment +'"><button id="editeur-btn'+ increment +'">OK</button></div><div style="margin-bottom : 10px;"><label>Année d\'édition</span></label><input type="text" id="annee-generat'+ increment +'"><button id="annee-btn'+ increment +'">OK</button></div><label for="texte-generat" style="vertical-align:top">Texte du coup de cœur</label><textarea id="texte-generat'+ increment +'" cols="40" rows="5"></textarea><button id="texte-btn'+ increment +'">OK</button><div style="margin-bottom : 10px;"><label>Adresse (URL) du document sur l\'OPAC</span></label><input type="text" id="url-generat'+ increment +'"><button id="url-btn'+ increment +'">OK</button></div></div><div style="margin-bottom : 10px;"><label>Signature</span></label><input type="text" id="signature-generat'+ increment +'"><button id="signature-btn'+ increment +'">OK</button></div>');
 
  $('#cdc-generat' + increment +'').hide().fadeIn(800);
 
@@ -150,12 +150,12 @@ $('#signature-btn'+ increment +'').click(function() {
   $('#signature'+ increment +'').replaceWith('<p id="signature'+increment+'" style="font-size: 0.9em; clear: both;"><em>'+ signature +'</em></p>');
 });
 
-//(positionnement footer reactualisté après generation CdC)
+//(positionnement footer reactualisté après generation dynamique jQuery sur le DOM
 $('footer').css('position', 'static');
 
 });
-//----------------------------- Fin codes création du coup de coeur------------------------------------//
 
+//----------------------------- Fin codes création du coup de coeur------------------------------------//
 
 //Rénitialiser le formulaire
 $('#raz').click(efface_formulaire);
@@ -186,10 +186,10 @@ $('#afficher-code').click(function() {
   //animation texte copié
   $('#lecode').before('<div id="copiedtext">C\'est copié !</span>');
   $('#copiedtext').hide().fadeIn(500);
-  });
+});
 
-  //(positionnement footer reactualisté après generation code)
-  $('footer').css('position', 'static');
+//(positionnement footer reactualisté après generation dynamique jQuery sur le DOM
+$('footer').css('position', 'static');
 
 });
 
