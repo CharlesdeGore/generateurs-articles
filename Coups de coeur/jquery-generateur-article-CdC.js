@@ -52,6 +52,10 @@ dossierimage = $('#dossier-image').val();
 
   //afficher div pour saisie du nom de la bannière
   $('#upload-banniere').css('display', 'block').hide().fadeIn(1000);
+
+  //(positionnement footer reactualisté après generation dynamique jQuery sur le DOM
+  $('footer').css('position', 'static');
+
 });
 
 //upload bannière
