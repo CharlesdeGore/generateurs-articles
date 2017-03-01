@@ -57,15 +57,16 @@ h4{
 margin: 10px 0;
 }
 
-#text-intro-art{padding: 10px;
+#text-intro-art{
+padding: 10px;
 background-color: rgba(0, 0, 0, 0.25);
-position: absolute;
-top: 28.6%;
+position: relative;
 color: #FFF;
 height: 78.5px;
-width: 868px;
+width: 100%;
 box-sizing: border-box;
 margin-left: -5px;
+margin-top : -78.5px;
 }
 
 #bann-art{
