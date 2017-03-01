@@ -55,9 +55,12 @@ dossierimage = $('#dossier-image').val();
 
 //upload image
 $('#nom-image-btn').click(function() {
+    if (dossierimage == undefined) {
+    alert('Complète le champ "Repertoire"')
+  } else {
   var nomimage = $('#nom-image').val();
   $('#img').attr('src', 'http://mediatheque.clamart.fr/images/stories/Action_culturelle/' + dossierimage + '/' + nomimage);
-
+  }
 });
 
 
@@ -65,6 +68,8 @@ $('#nom-image-btn').click(function() {
 $('#alt-image-btn').click(function() {
   var alt = $('#alt-image').val();
   $('#img').attr('alt', alt);
+  $('#alt-image-btn').after('<div id="altok" style="font-weight : normal; color : #838383; font-size : 12px;">'+alt+' est la description ajoutée à l\'image.</div>');
+
 });
 
 //insérer le titre
